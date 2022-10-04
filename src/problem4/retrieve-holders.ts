@@ -289,7 +289,7 @@ const getTokenBalanceFromAddress = async (addr : string) => {
   async () => {
     for (const addr of ADDRESSES_TO_LOOK_UP) {
       const balance = await getTokenBalanceFromAddress(addr);
-      console.log(`${addr} ${parseFloat(ethers.utils.formatUnits(balance, 8)).toLocaleString('en-SG', { minimumFractionDigits: 8 })}`)
+      console.log(`${addr} ${parseFloat(ethers.utils.formatUnits(balance, 8)).toLocaleString('en-SG', { minimumFractionDigits: 8 })}`);
     }
   }
 )();
