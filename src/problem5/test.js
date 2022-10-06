@@ -42,13 +42,14 @@ const ABI = [
   }
 ];    // your contract ABI
 
-const ADDRESS = "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"; // some wallet address with token balance
+const ADDRESS = "0x69f36eA1ebf4Ec9E53e3aaBF11CAF62b034ff3eE"; // some wallet address with token balance
 const TOKENS = [    // token contract addresses
-	"0x2170ed0880ac9a755fd29b2688956bd959f933f8 ", // TUSD
-	"0xb8c77482e45f1f44de1745f52c74426c631bdd52", // BNB
+	"0x2170ed0880ac9a755fd29b2688956bd959f933f8", // eth 
+	"0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984", // dai 
 ];
 
 // you can use your own RPC provider url (no need to deploy to mainnet)
+// Error: UnhandledPromiseRejectionWarning - not quite sure why this is happening ... ? 
 const provider = ethers.providers.getDefaultProvider("https://mainnet.infura.io/v3/baacf4530bdd414eb0709a6523de4567");
 
 const test = async () => {
