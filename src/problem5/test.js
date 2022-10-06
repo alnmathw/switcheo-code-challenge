@@ -1,6 +1,6 @@
 const { ethers } = require("ethers");
 
-const ADDR = "0x29b0ae8488dfECd9C30D92D6550eB746Ad13EBa2";   // your contract address
+const ADDR = "0x967e8c3934757fCA58a32B7f874BFa1917d60E2E";   // your contract address
 const ABI = [
   {
     "constant": true,
@@ -31,7 +31,7 @@ const ABI = [
             "type": "uint256"
           }
         ],
-        "internalType": "struct UtilityBalanceContract.BalanceStruct[]",
+        "internalType": "struct UtilityContract.BalanceStruct[]",
         "name": "",
         "type": "tuple[]"
       }
@@ -42,14 +42,14 @@ const ABI = [
   }
 ];    // your contract ABI
 
-const ADDRESS = "0xae08c571e771F360c35f5715E36407ECc89D91ed"; // some wallet address with token balance
+const ADDRESS = "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"; // some wallet address with token balance
 const TOKENS = [    // token contract addresses
-	"0x321162Cd933E2Be498Cd2267a90534A804051b11",
-	"0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+	"0x2170ed0880ac9a755fd29b2688956bd959f933f8 ", // TUSD
+	"0xb8c77482e45f1f44de1745f52c74426c631bdd52", // BNB
 ];
 
 // you can use your own RPC provider url (no need to deploy to mainnet)
-const provider = ethers.providers.getDefaultProvider("http://127.0.0.1:9545/");
+const provider = ethers.providers.getDefaultProvider("https://mainnet.infura.io/v3/baacf4530bdd414eb0709a6523de4567");
 
 const test = async () => {
 	const contract = new ethers.Contract(ADDR, ABI, provider);

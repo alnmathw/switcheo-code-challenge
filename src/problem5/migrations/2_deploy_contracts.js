@@ -1,5 +1,5 @@
-const UtilityBalanceContract = artifacts.require("UtilityBalanceContract");
+const UtilityContract = artifacts.require("UtilityContract");
 
 module.exports = function(deployer) {
-  deployer.deploy(UtilityBalanceContract);
+  deployer.deploy(UtilityContract);
 };
