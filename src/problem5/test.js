@@ -1,6 +1,6 @@
 const { ethers } = require("ethers");
 
-const ADDR = "0xb469DF44C957b0f215Ae4A16d9e2757fa773D652";   // your contract address
+const ADDR = "0x29b0ae8488dfECd9C30D92D6550eB746Ad13EBa2";   // your contract address
 const ABI = [
   {
     "constant": true,
