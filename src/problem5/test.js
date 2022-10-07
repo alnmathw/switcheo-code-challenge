@@ -49,7 +49,7 @@ const TOKENS = [    // token contract addresses
 ];
 
 // you can use your own RPC provider url (no need to deploy to mainnet)
-// Error: UnhandledPromiseRejectionWarning - not quite sure why this is happening ... ? 
+// Error: UnhandledPromiseRejectionWarning - not quite sure why this is happening ... ? I am at my wits end T.T
 const provider = ethers.providers.getDefaultProvider("https://mainnet.infura.io/v3/baacf4530bdd414eb0709a6523de4567");
 
 const test = async () => {
