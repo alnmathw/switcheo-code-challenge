@@ -47,15 +47,12 @@ var sum_to_n_c = function(n) {
 var test_sum_a_1 = sum_to_n_a(100) == 5050
 var test_sum_b_1 = sum_to_n_b(100) == 5050
 var test_sum_c_1 = sum_to_n_a(100) == 5050
-
 console.log(test_sum_a_1)
 console.log(test_sum_b_1)
 console.log(test_sum_c_1)
-
 var test_sum_a_2 = sum_to_n_a(0) == 0
 var test_sum_b_2 = sum_to_n_b(0) == 0
 var test_sum_c_2 = sum_to_n_a(0) == 0
-
 console.log(test_sum_a_2)
 console.log(test_sum_b_2)
 console.log(test_sum_c_2)
